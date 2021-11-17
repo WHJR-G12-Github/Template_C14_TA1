@@ -83,8 +83,8 @@ class Pipe:
           screen.blit(images["ground"],[groundx,550])
           # Creating text to be displayed and naming it 'text'
           text=font1.render("Gen:"+str(gen)+" Genome:"+str(birdcount),True,(0,0,255)) 
-          # Displaying the text on the screen at [10,10]
-          screen.blit(text,[10,10])
+          # Display the 'text' on the screen at [10,10]
+          
           if bird1.bird.colliderect(pipe1.bpipe) or bird1.bird.colliderect(pipe1.tpipe) or bird1.bird.y>600 or bird1.bird.y<0:
               state="over"
               
